@@ -1,0 +1,78 @@
+#canvas { 
+	position : fixed;
+	left : 0px;
+	top : 0px;
+	width : 100%;
+	height : 100%;
+	pointer-events : none; 
+	z-index : 99999999999999;
+}
+
+.centerd {
+	margin-left : auto;
+	margin-right : auto;
+}
+
+.heading {
+	color : #007bff;
+	text-align : center;
+	padding-top : 0.5rem;
+}
+
+.right-align {
+	text-align : right;
+}
+
+@keyframes move_up {
+	from {
+		top : 0px;
+	}
+	to {
+		top : -100%;
+	}
+}
+
+@keyframes move_down {
+	from {
+		top : -100%;
+	}
+	to {
+		top : 0px;
+	}
+}
+
+#toggle-task-add {
+	position : fixed;
+	right : 0.5rem;
+	top : 0.5rem;
+	z-index : 100000;
+}
+
+#add-task-menu {
+	position : fixed;
+	top : -100%;
+	left : 0px;
+
+	width : 100%;
+
+	background-color : #FFF;
+	animation-name : none;
+	animation-duration : 0.25s;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: both;
+	box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.67);
+
+	z-index : 10000;
+}
+
+#total-unicorns {
+	position : fixed;
+	margin : 0px;
+	bottom : 0.5rem;
+	left : 0.5rem;
+}
+
+.unicorn {
+	display : inline-block;
+	width : 2rem;
+}

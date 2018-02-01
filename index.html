@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="msapplication-tap-highlight" content="no" />
+		<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+		<meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline' gap:; style-src 'self' 'unsafe-inline'; media-src *" />
+	  	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<title>Todoer</title>
+	</head>
+
+	<body>
+		<canvas id="canvas"></canvas>
+		<p id="total-unicorns"></p>
+		<div>
+			<div id="active-tasks-menu" class="container">
+				<h1 class="heading">Active Tasks</h1>
+				<ul class="list-group list-group-flush" id="active-task-list"></ul>
+			</div>
+
+			<button id="toggle-task-add" class="btn btn-primary btn-l" onclick="toggle_task_menu()" id="task_send">+</button>
+			<div id="add-task-menu">
+				<div class="container">
+					<h1 class="heading">Change Task</h1>
+					<div class="form-group col">
+						<input class="form-control" name="task_name" placeholder="Task name" type="text" id="task_name"></input>
+					</div>
+					<div class="row">
+						<div class="form-group col">
+							<button class="btn btn-secondary centerd w-100" onclick="remove_task_from_form()" id="task_send">Remove Task</button>
+						</div>
+						<div class="form-group col">
+							<button class="btn btn-primary centerd w-100" onclick="add_task_from_form()" id="task_send">Add Task</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="cordova.js"></script>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/tasks.js"></script>
+		<script src="js/particles.js"></script>
+		<script src="js/index.js"></script>
+	</body>
+</html>
